@@ -16,6 +16,7 @@
 		24424199214AF6C400BF558C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24424198214AF6C400BF558C /* Assets.xcassets */; };
 		2442419C214AF6C400BF558C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442419A214AF6C400BF558C /* LaunchScreen.storyboard */; };
 		2499D0FB214C14410054A8A7 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D0FA214C14410054A8A7 /* GameCamera.swift */; };
+		2499D0FD214D6AC00054A8A7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D0FC214D6AC00054A8A7 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2442419B214AF6C400BF558C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2442419D214AF6C400BF558C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2499D0FA214C14410054A8A7 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
+		2499D0FC214D6AC00054A8A7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				2442418B214AF6C300BF558C /* AppDelegate.swift */,
 				2442419D214AF6C400BF558C /* Info.plist */,
+				2499D0FC214D6AC00054A8A7 /* Configuration.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24424192214AF6C300BF558C /* GameScene.swift in Sources */,
+				2499D0FD214D6AC00054A8A7 /* Configuration.swift in Sources */,
 				24424194214AF6C300BF558C /* GameViewController.swift in Sources */,
 				2499D0FB214C14410054A8A7 /* GameCamera.swift in Sources */,
 				2442418C214AF6C300BF558C /* AppDelegate.swift in Sources */,
