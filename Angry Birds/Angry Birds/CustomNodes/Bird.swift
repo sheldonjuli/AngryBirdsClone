@@ -16,6 +16,14 @@ class Bird: SKSpriteNode {
     let birdType: BirdType
     var isDragged = false
     
+    var isFlying = false {
+        didSet {
+            if isFlying {
+                physicsBody?.isDynamic = true
+            }
+        }
+    }
+    
     init(type: BirdType) {
         birdType = type
         
