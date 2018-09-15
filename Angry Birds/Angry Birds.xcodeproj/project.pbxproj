@@ -15,6 +15,7 @@
 		24424197214AF6C300BF558C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24424195214AF6C300BF558C /* Main.storyboard */; };
 		24424199214AF6C400BF558C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24424198214AF6C400BF558C /* Assets.xcassets */; };
 		2442419C214AF6C400BF558C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442419A214AF6C400BF558C /* LaunchScreen.storyboard */; };
+		2499D0FB214C14410054A8A7 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D0FA214C14410054A8A7 /* GameCamera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		24424198214AF6C400BF558C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2442419B214AF6C400BF558C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2442419D214AF6C400BF558C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2499D0FA214C14410054A8A7 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		2442418A214AF6C300BF558C /* Angry Birds */ = {
 			isa = PBXGroup;
 			children = (
+				2499D0F9214C14190054A8A7 /* CustomNodes */,
 				2499D0F8214C03860054A8A7 /* TileSets */,
 				2499D0F7214C03530054A8A7 /* UI */,
 				2499D0F5214C032F0054A8A7 /* Scenes */,
@@ -111,6 +114,14 @@
 				244198B5214B072F00E7AB6F /* AngryBirdsTileSet.sks */,
 			);
 			path = TileSets;
+			sourceTree = "<group>";
+		};
+		2499D0F9214C14190054A8A7 /* CustomNodes */ = {
+			isa = PBXGroup;
+			children = (
+				2499D0FA214C14410054A8A7 /* GameCamera.swift */,
+			);
+			path = CustomNodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 			files = (
 				24424192214AF6C300BF558C /* GameScene.swift in Sources */,
 				24424194214AF6C300BF558C /* GameViewController.swift in Sources */,
+				2499D0FB214C14410054A8A7 /* GameCamera.swift in Sources */,
 				2442418C214AF6C300BF558C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +345,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Angry Birds/Info.plist";
+				DEVELOPMENT_TEAM = X7D766PLD8;
+				INFOPLIST_FILE = "Angry Birds/Template/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +363,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Angry Birds/Info.plist";
+				DEVELOPMENT_TEAM = X7D766PLD8;
+				INFOPLIST_FILE = "Angry Birds/Template/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
