@@ -13,8 +13,8 @@
 		24424192214AF6C300BF558C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24424191214AF6C300BF558C /* GameScene.swift */; };
 		24424194214AF6C300BF558C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24424193214AF6C300BF558C /* GameViewController.swift */; };
 		24424197214AF6C300BF558C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24424195214AF6C300BF558C /* Main.storyboard */; };
-		24424199214AF6C400BF558C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24424198214AF6C400BF558C /* Assets.xcassets */; };
 		2442419C214AF6C400BF558C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442419A214AF6C400BF558C /* LaunchScreen.storyboard */; };
+		24661618214FFE590025E92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24661617214FFE590025E92F /* Assets.xcassets */; };
 		2499D0FB214C14410054A8A7 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D0FA214C14410054A8A7 /* GameCamera.swift */; };
 		2499D0FD214D6AC00054A8A7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D0FC214D6AC00054A8A7 /* Configuration.swift */; };
 		24EB9262214D7C7E00E9637F /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9261214D7C7E00E9637F /* Bird.swift */; };
@@ -29,9 +29,9 @@
 		24424191214AF6C300BF558C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		24424193214AF6C300BF558C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		24424196214AF6C300BF558C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		24424198214AF6C400BF558C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2442419B214AF6C400BF558C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2442419D214AF6C400BF558C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24661617214FFE590025E92F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2499D0FA214C14410054A8A7 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
 		2499D0FC214D6AC00054A8A7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		24EB9261214D7C7E00E9637F /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				24424195214AF6C300BF558C /* Main.storyboard */,
-				24424198214AF6C400BF558C /* Assets.xcassets */,
+				24661617214FFE590025E92F /* Assets.xcassets */,
 				2442419A214AF6C400BF558C /* LaunchScreen.storyboard */,
 			);
 			path = UI;
@@ -194,8 +194,8 @@
 				24424197214AF6C300BF558C /* Main.storyboard in Resources */,
 				2442418E214AF6C300BF558C /* GameScene.sks in Resources */,
 				244198B6214B072F00E7AB6F /* AngryBirdsTileSet.sks in Resources */,
-				24424199214AF6C400BF558C /* Assets.xcassets in Resources */,
 				2442419C214AF6C400BF558C /* LaunchScreen.storyboard in Resources */,
+				24661618214FFE590025E92F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
