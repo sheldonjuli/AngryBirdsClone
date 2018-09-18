@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24136591215075B700F95CB3 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24136590215075B700F95CB3 /* SKNode+Extensions.swift */; };
 		244198B6214B072F00E7AB6F /* AngryBirdsTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 244198B5214B072F00E7AB6F /* AngryBirdsTileSet.sks */; };
 		2442418C214AF6C300BF558C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442418B214AF6C300BF558C /* AppDelegate.swift */; };
 		2442418E214AF6C300BF558C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2442418D214AF6C300BF558C /* GameScene.sks */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24136590215075B700F95CB3 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		244198B5214B072F00E7AB6F /* AngryBirdsTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AngryBirdsTileSet.sks; sourceTree = "<group>"; };
 		24424188214AF6C300BF558C /* Angry Birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Angry Birds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2442418B214AF6C300BF558C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2413658F2150755B00F95CB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24136590215075B700F95CB3 /* SKNode+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2442417F214AF6C300BF558C = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		2442418A214AF6C300BF558C /* Angry Birds */ = {
 			isa = PBXGroup;
 			children = (
+				2413658F2150755B00F95CB3 /* Extensions */,
 				2499D0F9214C14190054A8A7 /* CustomNodes */,
 				2499D0F8214C03860054A8A7 /* TileSets */,
 				2499D0F7214C03530054A8A7 /* UI */,
@@ -207,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24424192214AF6C300BF558C /* GameScene.swift in Sources */,
+				24136591215075B700F95CB3 /* SKNode+Extensions.swift in Sources */,
 				24EB9264214E047900E9637F /* Block.swift in Sources */,
 				2499D0FD214D6AC00054A8A7 /* Configuration.swift in Sources */,
 				24424194214AF6C300BF558C /* GameViewController.swift in Sources */,
