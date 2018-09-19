@@ -155,7 +155,7 @@ class GameScene: SKScene {
         bird.physicsBody?.isDynamic = false
         bird.position = anchor.position
         addChild(bird)
-        bird.aspecScale(to: mapNode.tileSize, width: false, multiplier: 1.0)
+        bird.aspecScale(to: mapNode.tileSize, width: false, multiplier: 0.65)
         constraintToAnchor(active: true)
         roundState = .ready
     }
