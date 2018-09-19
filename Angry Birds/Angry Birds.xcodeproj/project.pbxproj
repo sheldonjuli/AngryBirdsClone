@@ -84,6 +84,7 @@
 		2442418A214AF6C300BF558C /* Angry Birds */ = {
 			isa = PBXGroup;
 			children = (
+				247BB93A2152B50F00F80E60 /* Levels */,
 				2413658F2150755B00F95CB3 /* Extensions */,
 				2499D0F9214C14190054A8A7 /* CustomNodes */,
 				2499D0F8214C03860054A8A7 /* TileSets */,
@@ -93,6 +94,14 @@
 				2499D0F6214C03390054A8A7 /* Template */,
 			);
 			path = "Angry Birds";
+			sourceTree = "<group>";
+		};
+		247BB93A2152B50F00F80E60 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				2442418D214AF6C300BF558C /* GameScene1.sks */,
+			);
+			path = Levels;
 			sourceTree = "<group>";
 		};
 		2499D0F4214C031B0054A8A7 /* ViewController */ = {
@@ -106,7 +115,6 @@
 		2499D0F5214C032F0054A8A7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				2442418D214AF6C300BF558C /* GameScene1.sks */,
 				24424191214AF6C300BF558C /* GameScene.swift */,
 				245AE35121529D59009C8319 /* MenuScene.swift */,
 				245AE35321529D7D009C8319 /* LevelScene.swift */,
