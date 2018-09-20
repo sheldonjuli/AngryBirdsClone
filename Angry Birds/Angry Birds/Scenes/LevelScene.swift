@@ -16,6 +16,12 @@ class LevelScene: SKScene {
     }
     
     func setupLevelSelection() {
+        let background = SKSpriteNode(imageNamed: "levelBackground")
+        background.position = CGPoint(x: frame.midX, y: frame.midY)
+        background.aspecScale(to: frame.size, width: true, multiplier: 1.0)
+        background.zPosition = ZPositions.background
+        addChild(background)
+
         var level = 1
         let columnStartingPoint = frame.midX / 2
         let rowStartingPoint = frame.midY + frame.midY / 2
