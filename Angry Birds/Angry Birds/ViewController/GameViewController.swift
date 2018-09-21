@@ -49,9 +49,19 @@ extension GameViewController: SceneManagerDelegate {
     
     func present(scene:SKScene) {
         if let view = self.view as! SKView? {
+            
+            // Make sure we start with a fresh scene
+            if let gestureRecognizers = view.gestureRecognizers {
+                for recognizer in gestureRecognizers {
+                    view.removeGestureRecognizer(recognizer)
+                }
+            }
+            
             scene.scaleMode = .resizeFill
             view.presentScene(scene)
             view.ignoresSiblingOrder = true
+            
+            // Debug code
             view.showsFPS = true
             view.showsNodeCount = true
         }

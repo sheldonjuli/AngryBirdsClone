@@ -24,6 +24,7 @@
 		247BB9412153026C00F80E60 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 247BB9402153026C00F80E60 /* Levels.plist */; };
 		247BB9432154349F00F80E60 /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BB9422154349F00F80E60 /* LevelData.swift */; };
 		247BB9472154708E00F80E60 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BB9462154708E00F80E60 /* Enemy.swift */; };
+		24856C4D21549B4F0058BA4B /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24856C4C21549B4F0058BA4B /* Popup.swift */; };
 		2499D0FB214C14410054A8A7 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D0FA214C14410054A8A7 /* GameCamera.swift */; };
 		2499D0FD214D6AC00054A8A7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D0FC214D6AC00054A8A7 /* Configuration.swift */; };
 		24EB9262214D7C7E00E9637F /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9261214D7C7E00E9637F /* Bird.swift */; };
@@ -50,6 +51,7 @@
 		247BB9402153026C00F80E60 /* Levels.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
 		247BB9422154349F00F80E60 /* LevelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
 		247BB9462154708E00F80E60 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		24856C4C21549B4F0058BA4B /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		2499D0FA214C14410054A8A7 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
 		2499D0FC214D6AC00054A8A7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		24EB9261214D7C7E00E9637F /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				24EB9261214D7C7E00E9637F /* Bird.swift */,
 				24EB9263214E047900E9637F /* Block.swift */,
 				247BB9462154708E00F80E60 /* Enemy.swift */,
+				24856C4C21549B4F0058BA4B /* Popup.swift */,
 			);
 			path = CustomNodes;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				2499D0FB214C14410054A8A7 /* GameCamera.swift in Sources */,
 				247BB93F2152C93800F80E60 /* AnimationHelper.swift in Sources */,
 				24EB9262214D7C7E00E9637F /* Bird.swift in Sources */,
+				24856C4D21549B4F0058BA4B /* Popup.swift in Sources */,
 				2442418C214AF6C300BF558C /* AppDelegate.swift in Sources */,
 				245AE35421529D7D009C8319 /* LevelScene.swift in Sources */,
 			);

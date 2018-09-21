@@ -10,7 +10,7 @@ import SpriteKit
 import GameplayKit
 
 enum RoundState {
-    case ready, flying, finished, animating
+    case ready, flying, finished, animating, gameOver
 }
 
 class GameScene: SKScene {
@@ -28,7 +28,8 @@ class GameScene: SKScene {
     var numEnemies = 0 {
         didSet {
             if numEnemies < 1 {
-                print("here")
+                roundState = .gameOver
+                presentPopup(victory: true)
             }
         }
     }
@@ -82,7 +83,7 @@ class GameScene: SKScene {
                 self.panRecognizer.isEnabled = true
                 self.addBird()
             })
-        case .animating:
+        case .animating, .gameOver:
             break
         }
     }
@@ -181,6 +182,8 @@ class GameScene: SKScene {
     
     func addBird() {
         if birds.isEmpty {
+            roundState = .gameOver
+            presentPopup(victory: false)
             return
         }
         
@@ -228,12 +231,44 @@ class GameScene: SKScene {
         }
     }
     
+    func presentPopup(victory: Bool) {
+        if victory {
+            let popup = Popup(type: 0, size: frame.size)
+            popup.zPosition = ZPositions.hudBackground
+            popup.popupButtonHandlerDelegate = self
+            gameCamera.addChild(popup)
+        } else {
+            let popup = Popup(type: 1, size: frame.size)
+            popup.zPosition = ZPositions.hudBackground
+            popup.popupButtonHandlerDelegate = self
+            gameCamera.addChild(popup)
+        }
+    }
+    
     override func didSimulatePhysics() {
         guard let physicsBody = bird.physicsBody else { return }
         if roundState == .flying && physicsBody.isResting {
             gameCamera.setContraints(with: self, and: mapNode.frame, to: nil)
             bird.removeFromParent()
             roundState = .finished
+        }
+    }
+}
+
+extension GameScene: PopupButtonHandlerDelegate {
+    func menuTapped() {
+        sceneManagerDelegate?.presentLevelScene()
+    }
+    
+    func nextTapped() {
+        if let level = level {
+            sceneManagerDelegate?.presentGameSceneFor(level: level + 1)
+        }
+    }
+    
+    func retryTapped() {
+        if let level = level {
+            sceneManagerDelegate?.presentGameSceneFor(level: level)
         }
     }
 }
